@@ -1,19 +1,10 @@
-/* ===== ESTILOS GENERALES ===== */
+  --Para todo el documento
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #e3f2fd; /* azul claro suave */
-  color: #222;
-  line-height: 1.6;
-  padding-bottom: 40px;
-}
-
-/* ===== CABECERA ===== */
+--Para la cabecera
 header {
   background: linear-gradient(90deg, #0d47a1, #1976d2);
   color: white;
@@ -21,31 +12,37 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-  display: flex;
+  body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #e3f2fd;
+  color: #222;
+  line-height: 1.6;
+  padding-bottom: 40px;
+    }
+
+--Para el logo de la pagina web
+  .logo {
   align-items: center;
   gap: 20px;
-}
+  }
 
-.logo img {
+  .logo img {
   width: 90px;
   border-radius: 10px;
-}
+  }
 
 .logo h1 {
   font-size: 28px;
   letter-spacing: 1px;
   font-weight: 600;
 }
-
-/* ===== ENTRADAS PRINCIPALES ===== */
 main {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Tarjetas / artículos */
+--Para las entradas del blog , en este caso los jugadores
 article.entrada {
   background-color: whitesmoke;
   border-radius: 15px;
@@ -62,7 +59,7 @@ article.entrada:hover {
   box-shadow: 20px 20px 25px rgba(39, 39, 39, 0.15);
 }
 
-/* Imagen del jugador */
+--imagen de los jugadores
 article.entrada img {
   width: 200px;
   height: auto;
@@ -70,30 +67,30 @@ article.entrada img {
   flex-shrink: 0;
 }
 
-/* Contenido del texto */
+--texto de los jugadores
 article.entrada h2 {
   color: #0d47a1;
   margin-bottom: 10px;
 }
-
+--Lista de los datos de los jugadores
 article.entrada ul {
   list-style: none;
   margin-bottom: 15px;
-}
+  }
 
 article.entrada li {
   margin-bottom: 6px;
   font-size: 15px;
-}
+  }
 
 article.entrada h5 {
   font-weight: 400;
   font-size: 15px;
   text-align: justify;
   margin-bottom: 15px;
-}
+  }
 
-/* ===== IFRAME (VIDEOS) ===== */
+--lInk de los videos de la 
 iframe {
   width: 100%;
   border-radius: 10px;
@@ -120,4 +117,5 @@ iframe {
     flex-direction: column;
     text-align: center;
   }
+
 }
